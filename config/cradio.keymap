@@ -6,7 +6,6 @@
 #include <dt-bindings/zmk/bt.h>
 
 // Lower row mods macro
-// define RMLR(k1,k2,k3,k4,k5) &ht  k1  &ht  k2  &ht LSHFT k3
 #define LMLR(k1,k2,k3) &ht LCTRL k1  &ht LALT k2  &ht LSHFT k3
 
 / {
@@ -94,7 +93,7 @@
         &kp C_BRI_DN &kp C_BRI_UP &trans    &kp C_PREV &kp C_NEXT     &trans      &trans     &trans     &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans     &trans     &trans     &trans     &trans         &trans     &trans     &trans     &trans     &trans
+        &kp PSCRN     &trans     &trans     &trans     &trans         &trans     &trans     &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
