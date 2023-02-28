@@ -16,9 +16,7 @@
             bindings = <&tog 6>;
         };
     };
-};
 
-/ {
     behaviors {
         ht: hold_tap {
             label = "hold_tap";
@@ -32,6 +30,7 @@
         };
     };
 
+    
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
@@ -143,6 +142,7 @@
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
+
 	play_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
