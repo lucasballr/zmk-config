@@ -30,6 +30,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+        combo_play {
+            timeout-ms = <50>;
+            key-positions = <23 24 25>;
+            bindings = <&tog 6>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
         default_layer {
@@ -120,8 +129,8 @@
         tri_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ RESET    │          │          │ PROFILE 4│PROFILE 0 │   │          │          │          │          │  RESET   │
-            &reset     &trans     &trans  &bt BT_SEL 4 &bt BT_SEL 0    &trans     &trans     &trans     &trans      &reset
+        //│ RESET    │          │ USB/BLU  │ PROFILE 4│PROFILE 0 │   │          │          │          │          │  RESET   │
+            &reset     &trans  &out OUT_TOG &bt BT_SEL 4 &bt BT_SEL 0    &trans     &trans     &trans     &trans      &reset
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│BOOTLOADER│          │          │ PROFILE 5│PROFILE 1 │   │          │          │          │          │BOOTLOADER│
           &bootloader  &trans     &trans  &bt BT_SEL 5 &bt BT_SEL 1    &trans     &trans     &trans     &trans    &bootloader
@@ -130,6 +139,22 @@
             &trans     &trans     &trans    &bt BT_CLR &bt BT_SEL 2    &trans     &trans     &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
+        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
+            >;
+        };
+	play_layer {
+            bindings = <
+        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+        //│          │          │          │          │          │   │          │          │          │          │          │
+            &kp 1      &kp 2      &kp 3      &kp 4      &kp 5          &trans     &trans     &kp I      &trans     &trans
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│          │          │          │          │          │   │          │          │          │          │          │
+           &trans      &kp Q      &kp W      &kp E      &kp R          &trans     &trans     &trans     &trans     &trans
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│          │          │          │          │          │   │          │          │          │          │          │
+           &kp LSHFT   &kp A      &kp S      &kp D      &kp F          &trans     &trans     &trans     &trans     &trans
+        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
+                                             &kp LCTRL  &kp SPACE      &kp ESC     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
