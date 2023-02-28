@@ -7,6 +7,16 @@
 
 // Lower row mods macro
 #define LMLR(k1,k2,k3) &ht LCTRL k1  &ht LALT k2  &ht LSHFT k3
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_play {
+            timeout-ms = <50>;
+            key-positions = <23 24 25>;
+            bindings = <&tog 6>;
+        };
+    };
+};
 
 / {
     behaviors {
@@ -27,15 +37,6 @@
         tri_layer {
             if-layers = <1 4>;
             then-layer = <5>;
-        };
-    };
-
-    combos {
-        compatible = "zmk,combos";
-        combo_play {
-            timeout-ms = <50>;
-            key-positions = <23 24 25>;
-            bindings = <&tog 6>;
         };
     };
 
