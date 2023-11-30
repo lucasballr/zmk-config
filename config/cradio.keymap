@@ -51,7 +51,7 @@
         symbols {
             bindings = <
 &kp GRAVE             &kp EXCLAMATION        &kp AT_SIGN       &kp HASH           &kp DOLLAR       &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp STAR  &kp UNDERSCORE
-&kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH    &kp SEMICOLON  &trans     &trans         &trans    &kp LEFT_SHIFT
+&kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH    &kp SEMICOLON  &kp COLON  &trans         &trans    &kp LEFT_SHIFT
 &trans                &trans                 &trans            &trans             &trans           &trans         &trans     &trans         &trans    &trans
                                                                &kp TAB            &kp DEL          &trans         &trans
             >;
