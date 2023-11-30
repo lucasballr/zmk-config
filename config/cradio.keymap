@@ -7,7 +7,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 // Lower row mods macro
-#define LMLR(k1,k2,k3) &ht LCTRL k1  &ht LALT k2  &ht LSHFT k3
+// define LMLR(k1,k2,k3) &ht LCTRL k1  &ht LALT k2  &ht LSHFT k3
 / {
     combos {
         compatible = "zmk,combos";
@@ -52,9 +52,9 @@
           &ht LSHFT A    &kp S      &kp D    &lt 2 F     &kp G          &kp H      &kp J       &kp K      &kp L   &ht LSHFT SQT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
-           LMLR(Z,      X,         C)         &kp V      &kp B         &kp N      &lt 3 M   &lt 4 COMMA  &kp DOT    &kp FSLH
+           &ht LCTRL k1  &ht LALT k2  &ht LSHFT k3   &kp V      &kp B         &kp N      &lt 3 M   &lt 4 COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                           &ht LGUI ESC &kp BSPC     &ht LCTRL SPACE   &lt 1 ENTER
+                                           &ht LGUI ESC &kp BSPC     &kp SPACE   &lt 1 ENTER
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
