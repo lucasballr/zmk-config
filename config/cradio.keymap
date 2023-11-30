@@ -54,7 +54,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
            LMLR(Z,      X,         C)         &kp V      &kp B         &kp N      &lt 3 M   &lt 4 COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                           &ht LGUI ESC &kp BSPC     &kp SPACE   &lt 1 ENTER
+                                           &ht LGUI ESC &kp BSPC     &ht LCTRL SPACE   &lt 1 ENTER
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
